@@ -32,6 +32,7 @@
     "@storybook/addon-links": "^6.4.14",
     "@storybook/cli": "^6.4.14",
     "@storybook/html": "^6.4.14",
-    "babel-loader": "^8.2.3"
+    "babel-loader": "^8.2.3",
+    "simple-nunjucks-loader": "^2.0.3"
   }
 }
