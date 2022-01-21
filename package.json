@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ashur/eleventy-nunjucks-storybook/issues"
   },
-  "homepage": "https://github.com/ashur/eleventy-nunjucks-storybook#readme"
+  "homepage": "https://github.com/ashur/eleventy-nunjucks-storybook#readme",
+  "devDependencies": {
+    "@storybook/cli": "^6.4.14"
+  }
 }
