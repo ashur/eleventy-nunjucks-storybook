@@ -7,7 +7,9 @@
   },
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [
     "eleventy",
@@ -24,6 +26,12 @@
   },
   "homepage": "https://github.com/ashur/eleventy-nunjucks-storybook#readme",
   "devDependencies": {
-    "@storybook/cli": "^6.4.14"
+    "@babel/core": "^7.16.10",
+    "@storybook/addon-actions": "^6.4.14",
+    "@storybook/addon-essentials": "^6.4.14",
+    "@storybook/addon-links": "^6.4.14",
+    "@storybook/cli": "^6.4.14",
+    "@storybook/html": "^6.4.14",
+    "babel-loader": "^8.2.3"
   }
 }
