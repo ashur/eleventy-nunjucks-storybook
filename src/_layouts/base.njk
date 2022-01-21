@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 🎈🐀 -->
+	<meta name="generator" content="eleventy">
+
+	<title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+
+	<meta name="title" content="{{ site.title }}">
+</head>
+<body>
+	{{ content | safe }}
+</body>
+</html>

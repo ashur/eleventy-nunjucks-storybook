@@ -1,0 +1,26 @@
+{
+  "name": "eleventy-nunjucks-storybook",
+  "version": "1.0.0",
+  "description": "Use Nunjucks macros with Eleventy and Storybook",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "keywords": [
+    "eleventy",
+    "nunjucks",
+    "storybook"
+  ],
+  "author": {
+    "name": "Ashur Cabrera",
+    "url": "https://ashur.cab/rera"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashur/eleventy-nunjucks-storybook/issues"
+  },
+  "homepage": "https://github.com/ashur/eleventy-nunjucks-storybook#readme"
+}

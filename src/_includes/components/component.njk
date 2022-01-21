@@ -1,0 +1,8 @@
+{#
+ # This is the Encapsulated Component pattern from Trys Mudford
+ # https://www.trysmudford.com/blog/encapsulated-11ty-components/
+ #}
+{%- macro component(name, params) -%}
+	{%- from "components/" + name + "/" + name + ".njk" import render -%}
+	{{ render( params ) }}
+{%- endmacro -%}
