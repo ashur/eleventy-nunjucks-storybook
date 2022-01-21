@@ -7,5 +7,18 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials"
   ],
-  "framework": "@storybook/html"
+  "framework": "@storybook/html",
+  "webpackFinal": (config) => {
+    config.module.rules.push({
+        test: /\.njk$/,
+        use: [
+            {
+                loader: 'simple-nunjucks-loader',
+            }
+        ]
+    });
+
+    // Return the altered config
+    return config;
+  }
 }
