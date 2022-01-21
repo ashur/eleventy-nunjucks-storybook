@@ -1,0 +1,18 @@
+{#
+ # @prop {string} label
+ # @prop {boolean} [primary=false]
+ # @prop {string} [size="medium"]
+ #}
+{% macro render( props ) %}
+{%- set mode = "primary" if props.primary else "secondary" -%}
+<button
+    class="storybook-button storybook-button--{{ props.size }} storybook-button--{{ mode }}"
+>
+    {{ props.label }}
+</button>
+{% endmacro %}
+
+{# 📕 Render automatically if called from Storybook #}
+{% if storybookArgs %}
+    {{ render( storybookArgs ) }}
+{% endif %}
