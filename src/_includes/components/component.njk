@@ -1,8 +1,18 @@
 {#
- # This is the Encapsulated Component pattern from Trys Mudford
- # https://www.trysmudford.com/blog/encapsulated-11ty-components/
+ # This is the Encapsulated Component pattern from Trys Mudford,
+ # modified to support callable macros.
+ #
+ # - https://www.trysmudford.com/blog/encapsulated-11ty-components/
+ # - https://mozilla.github.io/nunjucks/templating.html#call
+ #
+ # @param {string} name - Name of component to be rendered (ex., "button")
+ # @param {Object} [params] - Passed as props to the component’s render macro
  #}
 {%- macro component(name, params) -%}
 	{%- from "components/" + name + "/" + name + ".njk" import render -%}
-	{{ render( params ) }}
+    {%- if caller -%}
+    	{%- call render( params ) %}{{ caller() }}{% endcall -%}
+    {%- else -%}
+    	{{- render( params ) -}}
+    {%- endif -%}
 {%- endmacro -%}
