@@ -4,7 +4,8 @@
   "description": "Use Nunjucks macros with Eleventy and Storybook",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "clean-css": "^5.2.2"
+    "clean-css": "^5.2.2",
+    "glob": "^7.2.0"
   },
   "scripts": {
     "build": "eleventy",
