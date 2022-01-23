@@ -1,5 +1,7 @@
 module.exports = eleventyConfig =>
 {
+	eleventyConfig.addWatchTarget( "./src/styles/" );
+
 	return {
 		dir: {
 			input: "src",

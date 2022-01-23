@@ -1,0 +1,15 @@
+.container {
+	max-width: var(--container-size);
+}
+
+.stack-sm > * + * {
+	margin-top: var(--stack-sm-size);
+}
+
+.stack > * + * {
+	margin-top: var(--stack-size);
+}
+
+.stack-lg > * + * {
+	margin-top: var(--stack-lg-size);
+}
