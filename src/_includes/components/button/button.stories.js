@@ -1,7 +1,7 @@
 import {createButton} from './button';
 
 export default {
-	title: 'Nunjucks Button',
+	title: 'Button',
 
 	// More on argTypes: https://storybook.js.org/docs/html/api/argtypes
 	argTypes: {
