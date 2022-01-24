@@ -1,0 +1,11 @@
+.code-snippet {
+	background-color: var(--tint-900);
+	border-radius: var(--size--2);
+	box-shadow: var(--shadow-elevation-medium);
+	color: var(--tint-100);
+	display: block;
+	line-height: 1.5;
+	overflow-x: scroll;
+	padding: var(--size-1);
+	white-space: pre;
+}

@@ -1,0 +1,16 @@
+{#
+ # @callable true
+ # @prop {boolean} [convertToSpaces=false]
+ #}
+{% macro render( props ) %}
+{%- set contents -%}{% if caller %}{{ caller() | safe }}{% endif %}{% endset -%}
+{%- if props.convertToSpaces -%}{% set contents = (contents | replace( "\t", "    " )) %}{% endif -%}
+<code
+    class="[][][ code-snippet ]"
+>{{ contents | safe }}</code>
+{% endmacro %}
+
+{# 📕 Render automatically if called from Storybook #}
+{% if storybookArgs %}
+    {{ render( storybookArgs, caller=storybookCaller ) }}
+{% endif %}

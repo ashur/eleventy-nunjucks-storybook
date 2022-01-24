@@ -28,7 +28,7 @@
 	--tint-600: #1577b5;
 	/* --tint-700: #126497; */
 	/* --tint-800: #0e4f77; */
-	/* --tint-900: #0b3e5f; */
+	--tint-900: #0b3e5f;
 
 	/* Colors */
 	--background-color: var(--tint-50);
