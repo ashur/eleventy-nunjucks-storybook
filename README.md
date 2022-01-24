@@ -2,9 +2,13 @@
 
 Use macro-based Nunjucks components with Eleventy and Storybook.
 
-> 👋 Interested in reading more about this example project? See ["Using Storybook with Nunjucks components in Eleventy"][blog] for details
+## Links
+
+- Interested in reading more about this example project? See ["Using Storybook with Nunjucks components in Eleventy"][blog] for details
+- Want to see a working copy of this site’s Storybook? Head over to [eleventy-nunjucks-storybook-demo.netlify.app][sb]
 
 [blog]: https://multiline.co/mment/2022/01/eleventy-storybook/
+[sb]: https://eleventy-nunjucks-storybook-demo.netlify.app
 
 ## Installation
 
@@ -36,7 +40,3 @@ To run Storybook:
 ```
 npm run storybook
 ```
-
-> 📕 Want to see a working copy of this site’s Storybook? Head over to [eleventy-nunjucks-storybook-demo.netlify.app][sb]
-
-[sb]: https://eleventy-nunjucks-storybook-demo.netlify.app
