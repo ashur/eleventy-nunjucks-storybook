@@ -37,6 +37,6 @@ To run Storybook:
 npm run storybook
 ```
 
-> 📕 Want to see a working copy of? Head over to [eleventy-nunjucks-storybook-demo.netlify.app][sb]
+> 📕 Want to see a working copy of this site’s Storybook? Head over to [eleventy-nunjucks-storybook-demo.netlify.app][sb]
 
 [sb]: https://eleventy-nunjucks-storybook-demo.netlify.app
