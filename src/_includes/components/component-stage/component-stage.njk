@@ -1,0 +1,13 @@
+{#
+ # @callable true
+ #}
+{% macro render( props ) %}
+<div
+    class="[][][ component-stage {{ "component-stage--center" if props.center }} ]"
+>{% if caller %}{{ caller() | safe }}{% endif %}</div>
+{% endmacro %}
+
+{# 📕 Render automatically if called from Storybook #}
+{% if storybookArgs %}
+    {{ render( storybookArgs, caller=storybookCaller ) }}
+{% endif %}

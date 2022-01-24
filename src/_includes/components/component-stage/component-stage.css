@@ -1,0 +1,10 @@
+.component-stage {
+	background-color: #ffffff;
+	border-radius: var(--size--2);
+	box-shadow: var(--shadow-elevation-medium);
+	padding: var(--size-1) var(--size-1);
+}
+
+.component-stage--center {
+	text-align: center;
+}
