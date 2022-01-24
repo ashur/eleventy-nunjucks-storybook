@@ -2,7 +2,7 @@ import {createButton} from '../button/button';
 import {createComponentStage} from './component-stage';
 
 export default {
-	title: 'Component stage',
+	title: 'Component Stage',
 
 	// More on argTypes: https://storybook.js.org/docs/html/api/argtypes
 	argTypes: {
@@ -15,8 +15,8 @@ const Template = (args) => {
 	return createComponentStage( args );
 };
 
-export const ButtonsText = Template.bind({});
-ButtonsText.args = {
+export const Button = Template.bind({});
+Button.args = {
 	content: createButton({ label: "Button", primary: true }).trim(),
 };
 
