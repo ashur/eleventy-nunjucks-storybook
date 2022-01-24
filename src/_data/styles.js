@@ -55,5 +55,3 @@ sources.forEach( source =>
 });
 
 module.exports = styles;
-
-console.dir( styles, { depth: 3 } );
