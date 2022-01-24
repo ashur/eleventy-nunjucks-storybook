@@ -29,8 +29,6 @@ let sources = [
 	},
 ];
 
-console.log( sources );
-
 /* CleanCSS options */
 let cleanCss = new CleanCSS( {} );
 
@@ -43,12 +41,12 @@ sources.forEach( source =>
 
 	if( result.warnings.length > 0 )
 	{
-		// ...
+		console.log( result.warnings );
 	}
 
 	if( result.errors.length > 0 )
 	{
-		// ...
+		throw new Error( result.errors.join( "\n" ) );
 	}
 
 	styles[source.name] = result.styles;
