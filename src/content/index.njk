@@ -1,0 +1,64 @@
+---
+permalink: /index.html
+---
+{%- from "components/component.njk" import component -%}
+
+<div class="[ stack-lg ][][ page ]">
+	<header class="[ stack ][][]">
+		<h1>{{ site.title }}</h1>
+
+ 		<p class="[][][ subtitle ]">The kinda-boring front end of an <a href="https://11ty.dev">Eleventy</a> project that demonstrates using <a href="https://storybook.js.org">Storybook</a> with <a href="https://mozilla.github.io/nunjucks/templating.html">Nunjucks</a> components.</p>
+	</header>
+
+	<section class="[ stack ][][]">
+		<h2>Component examples</h2>
+
+		<p>Here are two instances of a button component built using a single <a href="https://github.com/ashur/eleventy-nunjucks-storybook/blob/main/src/_includes/components/button/button.njk">Nunjucks macro</a>:</p>
+
+		{% call component( "component-stage", { center: true } ) %}
+
+			{{ component( "button", {
+				label: "Primary",
+				primary: true,
+				size: "large"
+			}) }}
+
+			{{ component( "button", {
+				label: "Secondary",
+				primary: false,
+				size: "large"
+			}) }}
+		{% endcall %}
+
+		<p>They’re injected into this page using the <a href="https://www.trysmudford.com/blog/encapsulated-11ty-components/">encapsulated component pattern</a>:</p>
+
+		{% call component( "code-snippet", { convertToSpaces: true } ) %}{%- raw -%}{%- from "components/component.njk" import component -%}
+
+{{ component( "button", {
+	label: "Primary",
+	primary: true,
+	size: "large"
+}) }}{% endraw %}{% endcall %}
+	</section>
+
+	<section class="[ stack ][][]">
+		<h2>Storybook</h2>
+
+		<p>Using Nunjucks macros for components is awesome, but you’re probably here because of the Storybook integration  <span aria-label="smiling face" role="img">☺️</span></p>
+
+		<ul class="[ stack-sm ][][]">
+			<li>See <a href="https://multiline.co/mment/2022/01/eleventy-storybook/">Using Storybook with Nunjucks components in Eleventy</a> for a detailed walkthrough on how this site’s copy of Storybook is configured to work with Nunjucks macros</li>
+			<li>If you’d like to poke around this site’s Storybook, a static build is <a href="https://eleventy-nunjucks-storybook-demo.netlify.app">live on Netlify</a></li>
+		</ul>
+	</section>
+
+	<section class="[ stack ][][]">
+		<h2>Get in touch</h2>
+
+		<p>Have a question? Running into trouble? Find a cool variation or improvement? <a href="https://twitter.com/ashur">Give me a shout!</a></p>
+	</section>
+
+	<footer>
+		<p>Built by <a href="https://ashur.cab/rera">Ashur Cabrera</a></p>
+	</footer>
+</div>

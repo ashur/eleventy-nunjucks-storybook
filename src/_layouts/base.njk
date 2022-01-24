@@ -10,8 +10,17 @@
 	<title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
 
 	<meta name="title" content="{{ site.title }}">
+
+	<style>
+		{{ styles.global | safe }}
+		{{ styles.composition | safe }}
+		{{ styles.utilities | safe }}
+		{{ styles.blocks | safe }}
+	</style>
 </head>
 <body>
-	{{ content | safe }}
+	<main class="[ center container ][][]">
+		{{ content | safe }}
+	</main>
 </body>
 </html>
