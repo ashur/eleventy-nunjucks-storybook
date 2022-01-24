@@ -2,15 +2,14 @@ const CleanCSS = require( "clean-css" );
 const glob = require( "glob" );
 
 /*
- * CUBE CSS pattern, which is awesome
+ * A loose interpretation of CUBE CSS, which is awesome
  * https://cube.fyi/
  */
 let sources = [
 	{
 		name: "global",
 		path: [
-			"./src/styles/reset.css",
-			"./src/styles/global.css",
+			...glob.sync( "./src/styles/global/*.css" ),
 		],
 	},
 	{
@@ -29,6 +28,8 @@ let sources = [
 		],
 	},
 ];
+
+console.log( sources );
 
 /* CleanCSS options */
 let cleanCss = new CleanCSS( {} );
